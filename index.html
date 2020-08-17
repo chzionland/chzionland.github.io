@@ -10,8 +10,9 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
         <!-- Font Awesome icons (free version)-->
-        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-        
+        <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -19,6 +20,27 @@
         
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+        /* Nav bar hamberg to close */
+        .navbar-close-icon {
+            font-size: 18px;
+            color: gray;
+            font-weight: lighter;
+        }
+        .navbar-toggler-icon {
+            width: 30px;
+            height: 30px;
+            border: 1px;
+            border-color: gray;
+        }
+        .navbar-toggler.collapsed .navbar-close-icon {
+            display: none;
+        }
+        .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+            display: inline;
+        }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,8 +48,10 @@
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger text-white" href="#page-top"><img src="assets/img/navbar-logo.png" alt="" />南德其中</a>
                 <button class="navbar-toggler navbar-toggler-right p-2 text-black-50 text-xl-center" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    MENU
-                    <i class="fas fa-bars ml-1"></i>
+                    <!-- MENU
+                    <i class="fas fa-bars ml-1"></i> -->
+                    <div class="navbar-close-icon px-1">X</div>
+                    <div class="navbar-toggler-icon"></div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
@@ -145,18 +169,18 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">关于南德</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase mb-4">关于南德</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4>1980年2月13日</h4>
+                                <h4 class="subheading"></h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">中国第一家私营企业——万县市江北贸易信托服务部成立。</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
