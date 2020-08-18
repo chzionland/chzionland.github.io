@@ -10067,8 +10067,8 @@ img::-moz-selection {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   background-color: #212529 !important;
 }
 #mainNav .navbar-toggler {
@@ -10097,10 +10097,40 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
   text-align: center;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
-
+#mainNav .dropbtn {
+  font-size: 0.95rem;
+  border: none;
+  background-color: #212529;
+  color: #fff;
+  padding: 8px;
+  width: 150px;
+}
+#mainNav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+#mainNav .dropdown-content {
+  background-color: #212529;
+  display:none;
+  position: absolute;
+  width: 150px;
+  z-index: 1;
+}
+#mainNav .dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  display: block;
+}
+#mainNav .dropdown-content a:hover{
+  background-color:  #00000080;
+}
+#mainNav .dropdown:hover .dropdown-content {
+  display: block;
+}
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -10118,15 +10148,15 @@ img::-moz-selection {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
-#mainNav.navbar-shrink .navbar-brand img {
+  #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
   }
   #mainNav .navbar-nav .nav-item {
@@ -10296,7 +10326,7 @@ header.masthead .masthead-heading {
   position: relative;
   float: right;
   width: 100%;
-  padding: 0 20px 0 100px;
+  padding: 0 10px 0 85px;
   text-align: left;
 }
 .timeline > li .timeline-panel:before {
@@ -10331,7 +10361,7 @@ header.masthead .masthead-heading {
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
-  padding: 0 20px 0 100px;
+  padding: 0 10px 0 85px;
   text-align: left;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
@@ -10359,47 +10389,25 @@ header.masthead .masthead-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  padding: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .timeline:before {
     left: 50%;
   }
   .timeline > li {
-    min-height: 100px;
     margin-bottom: 100px;
+    min-height: 150px;
   }
   .timeline > li .timeline-panel {
     float: left;
     width: 41%;
-    padding: 0 20px 20px 30px;
     text-align: right;
+    padding: 5px;
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-  }
-  .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    line-height: 18px;
-    margin-top: 16px;
-  }
-  .timeline > li.timeline-inverted > .timeline-panel {
-    float: right;
-    padding: 0 30px 20px 20px;
-    text-align: left;
-  }
-}
-@media (min-width: 992px) {
-  .timeline > li {
-    min-height: 150px;
-  }
-  .timeline > li .timeline-panel {
-    padding: 0 20px 20px;
-  }
-  .timeline > li .timeline-image {
     width: 150px;
     height: 150px;
     margin-left: -75px;
@@ -10410,7 +10418,9 @@ header.masthead .masthead-heading {
     margin-top: 30px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 20px 20px;
+    float: right;
+    text-align: left;
+    padding: 5px;
   }
 }
 @media (min-width: 1200px) {
@@ -10418,7 +10428,7 @@ header.masthead .masthead-heading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 0 0px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -10429,7 +10439,7 @@ header.masthead .masthead-heading {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 0px 0 20px;
   }
 }
 .team-member {
