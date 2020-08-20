@@ -10150,7 +10150,7 @@ header.masthead {
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  font-style: italic;
+  /*font-style: italic;*/
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family:  'Noto Sans SC', sans-serif;
