@@ -5441,6 +5441,9 @@ a.close.disabled {
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
+.modal-dialog-scrollable .modal-body p {
+  text-align: left;
+}
 
 .modal-dialog-centered {
   display: flex;
