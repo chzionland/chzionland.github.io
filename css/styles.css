@@ -5441,10 +5441,6 @@ a.close.disabled {
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
-.modal-dialog-scrollable .modal-body p {
-  text-align: left;
-}
-
 .modal-dialog-centered {
   display: flex;
   align-items: center;
@@ -5523,7 +5519,9 @@ a.close.disabled {
   flex: 1 1 auto;
   padding: 1rem;
 }
-
+.modal-body .item-text {
+  text-align: left;
+}
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
