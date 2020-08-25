@@ -18,6 +18,7 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <style>
             /* #mainNav .dropbtn {
                 font-size: 0.95rem;
@@ -49,22 +50,141 @@
             #mainNav .dropdown:hover .dropdown-content {
                 display: block;
             } */
+
+            /* .pic {
+                border: 10px solid #fff;  
+                float: left;
+                height: 300px;
+                width: 300px;
+                margin: 10px;
+                overflow: hidden;
+                -webkit-box-shadow: 5px 5px 5px #111;
+                box-shadow: 5px 5px 5px #111;
+            }
+            .swip{
+                background: url("Your background image URL");
+                background-size:300px 300px;
+                display: inline;
+            }
+            .swip img{
+                margin-left: 0 px;
+                -webkit-transition: margin 2s ease;
+                -moz-transition: margin 2s ease;
+                -o-transition: margin 2s ease;
+                transition: margin 2s ease;
+            } */
+            * {box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .masthead {top: 0%; bottom: 0%;}
+            .masthead .mySlides {display: none}
+            .masthead .mySlides img {
+                vertical-align: middle;
+                width:100%;
+                height: 708px;
+                object-fit: cover;
+            }
+            .masthead .slideshow-container {
+                position: relative;
+                margin: auto;
+            }
+            .masthead .prev,
+            .masthead .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: #f8f9fa;
+                font-weight: bold;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .masthead .prev {left: 0%;}
+            .masthead .next {right: 0%;}
+            .masthead .prev:hover, .masthead .next:hover {
+                background-color: rgba(0,0,0,0.8);
+                color: #fed136;
+            }
+            .masthead .text {
+                color: #ffffffee;
+                padding: 8px 24px;
+                position: absolute;
+                bottom: 45%;
+                width: 100%;
+                text-align: center;
+            }
+            .masthead .text p {
+                margin: 0 30px;
+                text-shadow: 0 0 1px 1px #212529;
+                font-weight: 400;
+            }
+            .masthead .prev, .masthead .next, .masthead .text {
+                font-size: 24px
+            }
+            .masthead .dots {
+                text-align:center; 
+                position: absolute; 
+                bottom:8%;
+                left: 50%;
+                transform:translate(-50%, -50%);
+            }
+            .masthead .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: gray;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            .masthead .active,
+            .masthead .dot:hover {
+                background-color: #fed136;
+            }
+            .masthead .fading {
+                -webkit-animation-name: fading;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fading;
+                animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fading {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            @keyframes fading {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            /* On smaller screens, decrease text size */
+            @media only screen and (min-width: 992px) {
+                .masthead .prev, .masthead .next,.masthead .text {font-size: 36px}
+                .masthead .prev {left: 5%;}
+                .masthead .next {right: 5%;}
+            }
+            @media only screen and (min-width: 1200px) {
+                .masthead .prev {left: 8%;}
+                .masthead .next {right: 8%;}
+            }
+
         </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1" id="mainNav">
             <div class="container my-10">
-                <a class="navbar-brand js-scroll-trigger text-white" href="#page-top"><img src="assets/img/navbar-logo.png" alt="" />南德其中</a>
+                <a class="navbar-brand js-scroll-trigger text-white" href="#page-top" style="font-size: 1.2rem;"><img src="assets/img/navbar-logo.png" alt="" />南德其中</a>
                 <button class="navbar-toggler navbar-toggler-right p-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars fa-2x"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2" href="#about">关于南德</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2" href="#portfolio">业务介绍</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2" href="#services">南德视界</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2" href="#contact">联系我们</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#about">关于南德</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#portfolio">业务介绍</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#services">南德视界</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#contact">联系我们</a></li>
                         <!-- Dropdown -->
                         <!-- <li class="nav-item m-auto">
                             <div class="dropdown mx-auto">
@@ -78,12 +198,67 @@
                 </div>
             </div>
         </nav>
+
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading mt-10" style="line-height: 1.5;">吸引全世界的智慧<br>服务全世界的智慧</div>
-                <!-- <div class="masthead-heading text-uppercase"></div> -->
-                <a class="btn btn-primary btn-lg text-uppercase text-black-50 js-scroll-trigger" href="#about">开启旅程</a>
+        <header class="masthead my-0 py-0">
+            <!-- <div class="container"> -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fading">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="assets/img/landing/bg1.jpg">
+                    <div class="text">
+                        <p>吸引全世界的智慧</p>
+                        <p>服务全世界的智慧</p>
+                    </div>
+                </div>
+                
+                <div class="mySlides fading">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="assets/img/landing/bg2.jpg">
+                    <div class="text">
+                        <p>只有方法才是世界上唯一的不可战胜的力量</p>
+                    </div>
+                </div>
+                
+                <div class="mySlides fading">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="assets/img/landing/bg3.jpg">
+                    <div class="text">
+                        <p>平稳分孽</p>
+                        <p>真理命运往往起于异端，终结于谜信</p>
+                    </div>
+                </div>
+                
+                <div class="mySlides fading">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="assets/img/landing/bg4.jpg">
+                    <div class="text">
+                        <p>风险推进，规模经营</p>
+                        <p>最低成本，综合效益</p>
+                    </div>
+                </div>
+    
+                <div class="mySlides fading">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="assets/img/landing/bg5.jpg">
+                    <div class="text">
+                        <p>驰骋西伯利亚</p>
+                        <p>饮马贝加尔湖</p>
+                        <p>打造东北亚共同市场</p>
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+                
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span> 
             </div>
         </header>
         
@@ -96,7 +271,7 @@
                 </div>
                 <ul class="timeline">
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>1980 - 1989</h4>
@@ -117,7 +292,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>1989 - 1992</h4>
@@ -133,7 +308,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>1992 - 1997</h4>
@@ -154,7 +329,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>1997 - 2016</h4>
@@ -170,7 +345,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.png" alt="" /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/5.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2016至今</h4>
@@ -431,5 +606,34 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+        </script>
     </body>
 </html>

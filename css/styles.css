@@ -31,7 +31,7 @@
   --warning: #fed136;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #212529;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -3997,10 +3997,10 @@ input[type=button].btn-block {
 }
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -10141,8 +10141,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
-  background-color: #212529;
+  color: #000;
+  background-color: #fff;
   /* background-image: url("../assets/img/header-bg.jpg"); */
   background-repeat: no-repeat;
   background-attachment: scroll;
