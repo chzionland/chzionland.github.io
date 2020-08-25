@@ -10137,13 +10137,13 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
-header.masthead {
+/* header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #000;
   background-color: #fff;
-  /* background-image: url("../assets/img/header-bg.jpg"); */
+  background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10151,7 +10151,7 @@ header.masthead {
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
-  /*font-style: italic;*/
+  font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
   font-family:  'Noto Sans SC', sans-serif;
@@ -10181,7 +10181,7 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
-}
+} */
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;
