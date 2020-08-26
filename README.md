@@ -75,11 +75,22 @@ http {
 """
 sudo systemctl restart nginx
 
+# Alias
+sudo nano ~/.bash_aliases
+"""
+function v2restart {
+    sudo systemctl restart v2ray
+    sudo systemctl status v2ray
+}
+
+alias v2check="sudo /usr/bin/v2ray/v2ray -test -config /etc/v2ray/config.json"
+alias v2traffic="sudo /etc/v2ray/traffic.sh"
+"""
+
 # Test
 sudo crontab -l
 ls /etc/v2ray/      # traffic.sh
 ls /var/log/v2ray/
-cat ~/.bash_aliases
 ```
 
 ## Install Website
