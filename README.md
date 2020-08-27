@@ -1,4 +1,11 @@
-## Setup a Server
+
+## Deployment - Method 1: Forge
+
+- Too easy, nothing to say, refer to this article: [Blog Web Site (Deployment)](https://www.sheldonl.com/2020/08/27/00.md)
+
+## Deployment - Method 2: Manually
+
+### Setup a Server
 
 - Ubuntu Settings
 
@@ -38,7 +45,6 @@ sudo ufw enable
 sudo ufw status
 ```
 
-## Deployment - Method 1
 
 ### Install Git and Clone Repos
 
@@ -93,9 +99,12 @@ ls /etc/v2ray/      # traffic.sh
 ls /var/log/v2ray/
 ```
 
-## Install Website
+### Install Website
 
 ```bash
+ls /var/www/qizhong.land/html/
 cd chzionland.github.io
-cp . /var/www/qizhong.land/html/
+cp -r * /var/www/qizhong.land/html/
+rm /var/www/qizhong.land/html/README.md
+rm /var/www/qizhong.land/html/Dockerfile
 ```
