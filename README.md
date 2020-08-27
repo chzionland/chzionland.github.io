@@ -1,7 +1,9 @@
 
 ## Deployment - Method 1: Forge
 
-- Too easy, nothing to say, refer to this article: [Blog Web Site (Deployment)](https://www.sheldonl.com/2020/08/27/00.md)
+- We are using this method.
+
+- Too easy, nothing to say, refer to this article: [Blog Website (Deployment)](https://www.sheldonl.com/2020/08/27/00.md)
 
 ## Deployment - Method 2: Manually
 
