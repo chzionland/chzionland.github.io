@@ -10091,6 +10091,10 @@ img::-moz-selection {
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
+#mainNav .navbar-brand .active,
+#mainNav .navbar-brand:hover {
+  color: #fed136;
+}
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 1rem;
@@ -10237,8 +10241,8 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .portfolio-modal .modal-content h2 {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
@@ -10251,8 +10255,8 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 2rem;
 }
-.portfolio-modal .modal-content img {
-  margin-bottom: 2rem;
+.portfolio-modal .modal-content .close-modal img {
+  width: 40px;
 }
 .portfolio-modal .close-modal {
   position: absolute;
@@ -10266,7 +10270,15 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-
+@media (min-width: 768px){
+  .portfolio-modal .modal-content h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .portfolio-modal .modal-content .close-modal img {
+    width: 48px;
+  }
+}
 .timeline {
   position: relative;
   padding: 0;
