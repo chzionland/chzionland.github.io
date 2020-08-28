@@ -10082,9 +10082,9 @@ img::-moz-selection {
   border: 0;
 }
 #mainNav .navbar-brand {
-  color: #fed136;
-  font-family: 'Noto Sans SC', sans-serif;
-  font-weight: 700;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  color: #fff;
+  font-weight: 600;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
@@ -10092,8 +10092,9 @@ img::-moz-selection {
   height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 1rem;
+  font-weight: 600;
   color: #fff;
   letter-spacing: 0.0625em;
   text-align: center;

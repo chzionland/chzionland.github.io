@@ -15,6 +15,8 @@
 
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
@@ -104,10 +106,10 @@
             .masthead .text p {
                 margin: 0 30px;
                 text-shadow: 0 0 1px 1px #212529;
-                font-weight: 600;
+                color:#f8f9fa;
             }
             .masthead .prev, .masthead .next, .masthead .text {
-                font-size: 24px
+                font-size: 18px
             }
             .masthead .dots {
                 text-align:center; 
@@ -145,6 +147,9 @@
                 to {opacity: 1}
             }
             /* On smaller screens, decrease text size */
+            @media only screen and (min-width: 768px) {
+                .masthead .prev, .masthead .next,.masthead .text {font-size: 24px}
+            }
             @media only screen and (min-width: 992px) {
                 .masthead .prev, .masthead .next,.masthead .text {font-size: 36px}
                 .masthead .prev {left: 5%;}
@@ -160,12 +165,12 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1" id="mainNav">
             <div class="container my-10">
-                <a class="navbar-brand js-scroll-trigger text-white" href="#page-top" style="font-size: 1.2rem;"><img src="assets/img/navbar-logo.png" alt="" />南德其中</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 1.2rem;"><img src="assets/img/navbar-logo.png" alt="" />南德其中</a>
                 <button class="navbar-toggler navbar-toggler-right p-2" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars fa-2x"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
+                    <ul class="navbar-nav text-uppercase ml-auto py-1">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#about">关于南德</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#portfolio">业务介绍</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#services">南德视界</a></li>
@@ -210,7 +215,8 @@
                     <img src="assets/img/landing/bg3.jpg">
                     <div class="text">
                         <p>平稳分孽</p>
-                        <p>真理命运往往起源于异端，终结于迷信</p>
+                        <p>真理命运往往起源于异端</p>
+                        <p>终结于迷信</p>
                     </div>
                 </div>
                 

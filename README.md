@@ -1,7 +1,7 @@
 
 ## Deployment - Method 1: Forge
 
-- We are using this method.
+- We are using this method. Visit the site: <https://qizhong.land>
 
 - Too easy, nothing to say, refer to this article: [Blog Website (Deployment)](https://www.sheldonl.com/2020/08/27/00.md)
 
