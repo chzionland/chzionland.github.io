@@ -10074,7 +10074,7 @@ img::-moz-selection {
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   color: #fed136;
   text-transform: uppercase;
@@ -10159,14 +10159,14 @@ header.masthead .masthead-subheading {
   font-style: italic;
   line-height: 1.5rem;
   margin-bottom: 25px;
-  font-family:  'Noto Sans SC', sans-serif;
+  font-family:  'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family:  'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -10222,13 +10222,13 @@ header.masthead .masthead-heading {
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700;
   margin-bottom: 0;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .portfolio-modal .modal-dialog {
@@ -10247,7 +10247,7 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 2rem;
@@ -10495,22 +10495,22 @@ section#contact form#contactForm .form-control:focus {
   box-shadow: none;
 }
 section#contact form#contactForm ::-webkit-input-placeholder {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #ced4da;
 }
 section#contact form#contactForm :-moz-placeholder {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #ced4da;
 }
 section#contact form#contactForm ::-moz-placeholder {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #ced4da;
 }
 section#contact form#contactForm :-ms-input-placeholder {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Noto Sans SC', 'Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: 700;
   color: #ced4da;
 }
@@ -10518,5 +10518,5 @@ section#contact form#contactForm :-ms-input-placeholder {
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
