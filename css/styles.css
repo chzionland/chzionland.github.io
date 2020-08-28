@@ -10011,7 +10011,7 @@ p {
   padding: 6rem 0;
 }
 .page-section h2.section-heading {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -10084,7 +10084,7 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
 }
@@ -10098,7 +10098,7 @@ img::-moz-selection {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   letter-spacing: 0.0625em;
   text-align: center;
