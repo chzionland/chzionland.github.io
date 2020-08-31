@@ -8,7 +8,7 @@
         <meta name="author" content="" />
         <title>南德其中</title>
 
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}" />
 
         <!-- Font Awesome icons (free version)-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -19,7 +19,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
         <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <style>
             /* #mainNav .dropbtn {
@@ -112,8 +112,8 @@
                 font-size: 18px
             }
             .masthead .dots {
-                text-align:center; 
-                position: absolute; 
+                text-align:center;
+                position: absolute;
                 bottom:8%;
                 left: 50%;
                 transform:translate(-50%, -50%);
@@ -139,11 +139,11 @@
                 animation-duration: 1.5s;
             }
             @-webkit-keyframes fading {
-                from {opacity: .4} 
+                from {opacity: .4}
                 to {opacity: 1}
             }
             @keyframes fading {
-                from {opacity: .4} 
+                from {opacity: .4}
                 to {opacity: 1}
             }
             /* On smaller screens, decrease text size */
@@ -171,8 +171,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto py-1">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#timeline">大事记</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#portfolio">业务介绍</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#timeline">大事记</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#services">南德视界</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger mx-2 py-2" href="#contact">联系我们</a></li>
                         <!-- Dropdown -->
@@ -201,7 +201,7 @@
                         <p>服务全世界的智慧</p>
                     </div>
                 </div>
-                
+
                 <div class="mySlides fading">
                     <!-- <div class="numbertext">2 / 5</div> -->
                     <img src="assets/img/landing/bg2.jpg">
@@ -209,7 +209,7 @@
                         <p>只有方法才是这个世界上至高无上的不可战胜的力量</p>
                     </div>
                 </div>
-                
+
                 <div class="mySlides fading">
                     <!-- <div class="numbertext">3 / 5</div> -->
                     <img src="assets/img/landing/bg3.jpg">
@@ -219,7 +219,7 @@
                         <p>终结于迷信</p>
                     </div>
                 </div>
-                
+
                 <div class="mySlides fading">
                     <!-- <div class="numbertext">4 / 5</div> -->
                     <img src="assets/img/landing/bg4.jpg">
@@ -228,7 +228,7 @@
                         <p>最低成本，综合效益</p>
                     </div>
                 </div>
-    
+
                 <div class="mySlides fading">
                     <!-- <div class="numbertext">5 / 5</div> -->
                     <img src="assets/img/landing/bg5.jpg">
@@ -242,17 +242,72 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
-                
+
             <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span> 
-                <span class="dot" onclick="currentSlide(5)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </header>
-        
-                <!-- Timeline-->
+
+        {{-- News --}}
+        <section class="page-section bg-light" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">快讯</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row text-center align-items-center">
+                    <div class="col-md-6 mx-auto">
+                        <h4 class="my-3"></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">业务介绍</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 mb-4 mx-auto">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="far fa-eye fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ asset('img/portfolio/shark-thumbnail.png') }}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">万尾鲨鱼苗计划</div>
+                                <div class="portfolio-caption-subheading text-muted mt-2">在全世界寻找具有智慧，又希望实现自己人生理想的人，为其提供把智慧转化为生产力的环境，并帮助其发展。</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4 mx-auto">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="far fa-eye fa-4x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="{{ asset('img/portfolio/plan-thumbnail.png') }}" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">长江计划</div>
+                                <div class="portfolio-caption-subheading text-muted mt-2">南德“以货易货”理论的新发展，开发“北方香港”——俄罗斯远东地区唯一的不冻港——斯拉维扬卡港。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline-->
         <section class="page-section" id="timeline">
             <div class="container">
                 <div class="text-center">
@@ -382,47 +437,9 @@
                 </ul>
             </div>
         </section>
-        
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">业务介绍</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 mb-4 mx-auto">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="far fa-eye fa-4x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/shark-thumbnail.png" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">万尾鲨鱼苗计划</div>
-                                <div class="portfolio-caption-subheading text-muted mt-2">在全世界寻找具有智慧，又希望实现自己人生理想的人，为其提供把智慧转化为生产力的环境，并帮助其发展。</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4 mx-auto">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="far fa-eye fa-4x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/plan-thumbnail.png" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">长江计划</div>
-                                <div class="portfolio-caption-subheading text-muted mt-2">南德“以货易货”理论的新发展，开发“北方香港”——俄罗斯远东地区唯一的不冻港——斯拉维扬卡港。</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section" id="services">
+
+        {{-- Services --}}
+        <section class="page-section bg-light" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">《南德视界》</h2>
@@ -444,6 +461,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
@@ -482,7 +500,7 @@
                         <h4 clsss="section-subheading" style="font-size: 1.2rem;">研究院</h4>
                         <ul class="list-unstyled" style="font-size: 0.95rem;">
                             <li>南德智慧经济研究院<li>
-                            <li>联系人：马龙</li>                      
+                            <li>联系人：马龙</li>
                             <li>study@qizhong.land</li>
                         </ul>
                     </div>
@@ -509,6 +527,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -517,12 +536,13 @@
                 </div>
             </div>
         </footer>
+
         <!-- Portfolio Modals-->
         <!-- Modal 1-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="{{ asset('img/close-icon.svg') }}" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -530,7 +550,7 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">万尾鲨鱼苗计划</h2>
                                     <p class="item-intro text-muted">我们的目标是：吸引全世界的智慧，服务全世界的智慧。</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/shark-full.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="{{ asset('img/portfolio/shark-full.jpg') }}" alt="" />
                                     <p class="item-text">
                                         “万尾鲨鱼苗计划”是延续南德集团于1996年提出的智慧文明生产方式在当下的发展。
                                         我们相信智慧文明生产方式的建立，是人类继工业文明生产方式取代农业文明生产方式之后，又一重大历史性变革。
@@ -569,7 +589,7 @@
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="{{ asset('img/close-icon.svg') }}" alt="Close modal" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -577,9 +597,9 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">中俄两国“全面易货型经济”长江计划</h2>
                                     <p class="item-intro text-muted">南德“以货易货”理论的新发展。</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/plan-full.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="{{ asset('img/portfolio/plan-full.jpg') }}" alt="" />
                                     <p class="item-text">
-                                        在20世纪八、九十年代，我们在对俄经济活动中发现了可以避开美元霸权的”以货易货”贸易方式，用我国300余家工厂共计1000余个火车皮的日用工业品，换回俄罗斯4架大型客机；后又成功发射了两颗人造地球同步轨道卫星。
+                                        在20世纪八、九十年代，我们在对俄经济活动中发现了可以避开美元霸权的“以货易货”贸易方式，用我国300余家工厂共计1000余个火车皮的日用工业品，换回俄罗斯4架大型客机；后又成功发射了两颗人造地球同步轨道卫星。
                                         今天经营着多条国际航线的四川省航空公司，最初就是以这四架飞机为基础而逐步建立起来的。
                                     </p class="item-text">
                                     <p class="item-text">
@@ -618,33 +638,33 @@
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="{{ asset('js/scripts.js') }}"></script>
 
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
-            
+
             function plusSlides(n) {
               showSlides(slideIndex += n);
             }
-            
+
             function currentSlide(n) {
               showSlides(slideIndex = n);
             }
-            
+
             function showSlides(n) {
               var i;
               var slides = document.getElementsByClassName("mySlides");
               var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
+              if (n > slides.length) {slideIndex = 1}
               if (n < 1) {slideIndex = slides.length}
               for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
+                  slides[i].style.display = "none";
               }
               for (i = 0; i < dots.length; i++) {
                   dots[i].className = dots[i].className.replace(" active", "");
               }
-              slides[slideIndex-1].style.display = "block";  
+              slides[slideIndex-1].style.display = "block";
               dots[slideIndex-1].className += " active";
             }
         </script>
