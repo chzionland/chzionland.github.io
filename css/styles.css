@@ -10142,6 +10142,146 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
+
+/* Dropdown */
+/* #mainNav .dropbtn {
+  font-size: 0.95rem;
+  border: none;
+  background-color: #212529;
+  color: #fff;
+  padding: 8px;
+  width: 150px;
+}
+#mainNav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+#mainNav .dropdown-content {
+  background-color: #212529;
+  display:none;
+  position: absolute;
+  width: 150px;
+  z-index: 1;
+}
+#mainNav .dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  display: block;
+}
+#mainNav .dropdown-content a:hover{
+  background-color:  #00000080;
+}
+#mainNav .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* landing banners */
+* {box-sizing: border-box}
+.masthead {
+    position: relative;
+    overflow: hidden;
+}
+.masthead .mySlides {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+.masthead .mySlides img {
+    vertical-align: middle;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.masthead .slideshow-container {
+    position: relative;
+    margin: 0;
+}
+.masthead .prev,
+.masthead .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #f8f9fa;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.masthead .prev {left: 0%;}
+.masthead .next {right: 0%;}
+.masthead .prev:hover, .masthead .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #fed136;
+}
+.masthead .text {
+    color: #ffffffee;
+    padding: 8px 24px;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+.masthead .text p {
+    margin: 0 30px;
+    text-shadow: 0 0 1px 1px #212529;
+    color:#f8f9fa;
+}
+.masthead .prev, .masthead .next, .masthead .text {
+    font-size: 18px
+}
+.masthead .dots {
+    text-align:center; 
+    position: absolute; 
+    bottom:8%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.masthead .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.masthead .active,
+.masthead .dot:hover {
+    background-color: #fed136;
+}
+.masthead .fading {
+    -webkit-animation-name: fading;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fading;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fading {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fading {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (min-width: 576px) {
+    .masthead .prev, .masthead .next,.masthead .text {font-size: 24px}
+}
+@media only screen and (min-width: 992px) {
+    .masthead .prev, .masthead .next,.masthead .text {font-size: 32px}
+    .masthead .prev {left: 5%;}
+    .masthead .next {right: 5%;}
+}
+@media only screen and (min-width: 1200px) {
+    .masthead .prev {left: 8%;}
+    .masthead .next {right: 8%;}
+}
 /* header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
