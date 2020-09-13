@@ -1,4 +1,12 @@
 
+## Git Clone
+
+- 大陆地区加速镜像源
+
+```bsh
+git clone git clone https://gitclone.com/github.com/chzionland/chzionland.github.io.git
+```
+
 ## Deployment - Method 1: Forge
 
 - We are using this method. Visit the site: <https://qizhong.land>
