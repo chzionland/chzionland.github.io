@@ -71,7 +71,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}}
 .btn:hover{color:#212529;text-decoration:none}.btn.focus,.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(254,209,54,.25)}.btn.disabled,.btn:disabled{opacity:.65}.btn:not(:disabled):not(.disabled){cursor:pointer}a.btn.disabled{pointer-events:none}
 .btn-primary{color:#fff;background-color:#fed136;border-color:#fed136}.btn-primary:hover{color:#fff;background-color:#fec810;border-color:#fec503}.btn-primary.focus,.btn-primary:focus{color:#fff;background-color:#fec810;border-color:#fec503;box-shadow:0 0 0 .2rem rgba(254,216,84,.5)}.btn-primary.disabled,.btn-primary:disabled{color:#fff;background-color:#fed136;border-color:#fed136}.btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{color:#fff;background-color:#fec503;border-color:#f3bd01}.btn-primary:not(:disabled):not(.disabled).active:focus,.btn-primary:not(:disabled):not(.disabled):active:focus,.show>.btn-primary.dropdown-toggle:focus{box-shadow:0 0 0 .2rem rgba(254,216,84,.5)}
-.btn-xl{padding:1.25rem 2.5rem;font-size:1.125rem;font-weight:700}.btn-lg{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+.btn-xl{padding:1.25rem 2.5rem;font-size:1.25rem;font-weight:700}.btn-lg{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}.btn-sm{padding:.25rem .5rem;font-size:.9rem;line-height:1.5;border-radius:.2rem}
 .fade{transition:opacity .15s linear}.fade:not(.show){opacity:0}
 @media (prefers-reduced-motion:reduce){.fade{transition:none}}
 .collapse:not(.show){display:none}.collapsing{position:relative;height:0;overflow:hidden;transition:height .35s ease}
@@ -195,7 +195,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 .bg-primary {background-color: #fed136 !important}a.bg-primary:hover, a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus {background-color: #fec503 !important}
 .bg-secondary {background-color: #6c757d !important}a.bg-secondary:hover, a.bg-secondary:focus,button.bg-secondary:hover,button.bg-secondary:focus {background-color: #545b62 !important}
 .bg-light {background-color: #f0f1f2 !important}a.bg-light:hover, a.bg-light:focus,button.bg-light:hover,button.bg-light:focus {background-color: #dae0e5 !important}
-.bg-dark {background-color: #343a40 !important}a.bg-dark:hover, a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus {background-color: #1d2124 !important}
+.bg-dark {background-color: #212529 !important}a.bg-dark:hover, a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus {background-color: #1d2124 !important}
 .bg-white {background-color: #fff !important}
 .bg-transparent {background-color: transparent !important}
 .border {border: 1px solid #dee2e6 !important}.border-primary {border-color: #fed136 !important}.border-secondary {border-color: #6c757d !important}
@@ -357,7 +357,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   padding: 16px;
   margin-top: -22px;
   color: #aaa;
-  font-weight: bold;
+  font-weight: 700;
   transition: 0.5s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -515,22 +515,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   border-right-width: 14px;
   border-left-width: 0;
 }
-.timeline > li:last-child {
-  margin-bottom: 0;
-}
-.timeline .timeline-heading h4 {
-  margin-top: 0;
-  color: inherit;
-}
-.timeline .timeline-heading h4.subheading {
-  text-transform: none;
-}
-.timeline .timeline-body > ul,
-.timeline .timeline-body > p {
-  margin-bottom: 0;
-  padding: 0;
-}
-
 @media (min-width: 768px) {
   .timeline:before {
     left: 10%;
@@ -686,18 +670,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 }
 
 /* Contact */
-#contact {
-  background-color: #212529;
-  background-position: center;
-}
 #contact h4 {
   font-size: 1.2rem;
   color: #fff;
-}
-#contact ul li {
-  font-size: 1rem;
-}
-.footer {
-  text-align: center;
-  font-size: 0.95rem;
 }
