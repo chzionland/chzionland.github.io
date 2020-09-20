@@ -258,7 +258,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
-  font-size: 0.75rem;
   color: #fed136;
   text-transform: uppercase;
   background-color: #212529;
@@ -313,10 +312,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
     padding-bottom: 0.4rem;
     background-color: #212529;
   }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-  }
-  #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
   }
@@ -630,10 +625,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   padding-bottom: 6rem;
   text-align: center;
 }
-.portfolio-modal .modal-content h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
 .portfolio-modal .modal-content p.item-intro {
   font-style: italic;
   margin-bottom: 2rem;
@@ -660,10 +651,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   opacity: 0.3;
 }
 @media (min-width: 768px){
-  .portfolio-modal .modal-content h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
   .portfolio-modal .modal-content .close-modal img {
     width: 48px;
   }
