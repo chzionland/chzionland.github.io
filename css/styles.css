@@ -272,8 +272,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 #mainNav .navbar-brand img {
   height: 1.5rem;
 }
-#mainNav .navbar-brand .active,
-#mainNav .navbar-brand:hover {
+#mainNav .navbar-brand .active, #mainNav .navbar-brand:hover {
   color: #fed136;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -283,11 +282,9 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   letter-spacing: 0.0625em;
   text-align: center;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active,
-#mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
-
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 1.5rem;
@@ -340,8 +337,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   position: relative;
   margin: 0;
 }
-#masthead .prev,
-#masthead .next {
+#masthead .prev, #masthead .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -393,8 +389,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   display: inline-block;
   transition: background-color 0.5s ease;
 }
-#masthead .active,
-#masthead .dot:hover {
+#masthead .active, #masthead .dot:hover {
   background-color: #fed136;
 }
 #masthead .fading {
