@@ -424,7 +424,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   #masthead .next {right: 8%;}
 }
 
-
 /* Timeline */
 .timeline {
   position: relative;
@@ -492,7 +491,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 .timeline > li > .timeline-panel {
   float: right;
   padding: 0 10px 0 85px;
-  text-align: left;
 }
 .timeline > li > .timeline-panel:before {
   right: auto;
@@ -529,7 +527,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
     float: right;
     width: 80%;
     padding: 0 30px 20px 20px;
-    text-align: left;
   }
 }
 @media (min-width: 992px) {
