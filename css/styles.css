@@ -44,11 +44,11 @@
 html{font-family:'Noto Sans SC',sans-serif;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
 body{overflow-x:hidden;margin:0;font-size:1rem;font-weight:300;line-height:1.5;color:#212529;text-align:left;background-color:#fff}
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem;font-weight:400;line-height:1.2}
-.h1,h1{font-size:2.5rem}.h2,h2{font-size:2rem}.h3,h3{font-size:1.75rem}.h4,h4{font-size:1.5rem}.h5,h5{font-size:1.25rem}.h6,h6{font-size:1rem}
+.h2,h2{font-size:2.25rem}.h3,h3{font-size:1.75rem}.h4,h4{font-size:1.5rem}.h5,h5{font-size:1.25rem}.h6,h6{font-size:1rem}
 p {margin-top: 0;margin-bottom: 0.5rem}
 ol,ul,dl {margin-top: 0;margin-bottom: 1rem}
 a{color:#fed136;text-decoration:none;background-color:transparent}a:hover{color:#e6b301;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}
-section{padding:9rem 0}
+section{padding:6rem 0}
 img{vertical-align:middle;border-style:none}
 img::-moz-selection{background:0 0}img::selection{background:0 0}img::-moz-selection{background:0 0}
 .img-fluid{max-width:100%;height:auto}
@@ -238,7 +238,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 .text-justify{text-align:justify!important}.text-wrap{white-space:normal!important}.text-nowrap{white-space:nowrap!important}.text-truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .text-left{text-align:left!important}.text-right{text-align:right!important}.text-center{text-align:center!important}
 .text-lowercase{text-transform:lowercase!important}.text-uppercase{text-transform:uppercase!important}.text-capitalize{text-transform:capitalize!important}
-.font-weight-thin{font-weight:100!important}.font-weight-light{font-weight:300!important}.font-weight-normal{font-weight:400!important}.font-weight-bold{font-weight:700!important}
+.font-weight-light{font-weight:300!important}.font-weight-normal{font-weight:400!important}.font-weight-bold{font-weight:700!important}
 .font-italic{font-style:italic!important}
 .text-white{color:#fff!important}
 .text-primary{color:#fed136!important}a.text-primary:focus,a.text-primary:hover{color:#e6b301!important}
@@ -248,7 +248,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 .text-body{color:#212529!important}.text-muted{color:#6c757d!important}
 .text-black-50{color:rgba(0,0,0,.5)!important}.text-white-50{color:rgba(255,255,255,.5)!important}
 .text-decoration-none{text-decoration:none!important}
-.page-section{padding:6rem 0}.page-section .section-heading{font-size:2.25rem;margin-top:0;margin-bottom:1rem}.page-section .section-subheading{font-size:1rem;font-weight:400;font-style:italic;margin-bottom:4rem}
 
 /* Navbar */
 #mainNav {
@@ -430,7 +429,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 .timeline {
   position: relative;
   padding: 0;
-  list-style: none;
 }
 .timeline:before {
   position: absolute;
