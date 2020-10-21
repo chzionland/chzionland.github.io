@@ -1,3 +1,8 @@
+# THis Repo is Deprecated
+
+_Please contribute to <https://github.com/chzionland/home>_
+
+
 
 ## Git Clone
 
