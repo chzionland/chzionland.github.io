@@ -1,4 +1,4 @@
-# THis Repo is Deprecated
+# THIS REPO IS DEPRECATED!
 
 _Please contribute to <https://github.com/chzionland/home>_
 
