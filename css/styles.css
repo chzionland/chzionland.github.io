@@ -146,7 +146,6 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 .navbar-expand > .container {padding-right: 0;padding-left: 0}
 .navbar-expand .navbar-nav {flex-direction: row}
 .navbar-expand .navbar-nav .dropdown-menu {position: absolute}
-.navbar-expand .navbar-nav .nav-link {padding-right: 0.5rem;padding-left: 0.5rem}
 .navbar-expand > .container {flex-wrap: nowrap}
 .navbar-expand .navbar-collapse {display: flex !important;flex-basis: auto}
 .navbar-expand .navbar-toggler {display: none}
@@ -282,7 +281,8 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
   letter-spacing: 0.0625em;
   text-align: center;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #fed136;
 }
 @media (min-width: 992px) {
@@ -323,7 +323,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 #masthead .mySlides {
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 102vh;
   background-color: #000;
 }
 #masthead .mySlides img {
@@ -353,7 +353,7 @@ hr{color:#666;width:1rem;height:1px;border-radius:20%;margin-bottom:2rem}
 #masthead .prev {left: 0%;}
 #masthead .next {right: 0%;}
 #masthead .prev:hover, #masthead .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
   color: #fed136;
 }
 #masthead .text {
