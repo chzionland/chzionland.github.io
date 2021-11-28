@@ -14,9 +14,7 @@ git clone git clone https://gitclone.com/github.com/chzionland/chzionland.github
 
 ## Deployment - Method 1: Forge
 
-- We are using this method. Visit the site: <https://qizhong.land>
-
-- Too easy, nothing to say, refer to this article: [Blog Website (Deployment)](https://www.sheldonl.com/2020/08/27/00.md)
+- [Blog Website (Deployment)](https://www.sheldonl.com/2020/08/27/00.md)
 
 ## Deployment - Method 2: Manually
 
@@ -39,6 +37,7 @@ hostnamectl set-hostname qizhong.land
 - BBR
 
 ```bash
+# not nessisary in new Linux kernel
 uname -r
 cp /etc/sysctl.conf /etc/sysctl.conf.old
 echo 'net.core.default_qdisc=fq' | sudo tee -a /etc/sysctl.conf
